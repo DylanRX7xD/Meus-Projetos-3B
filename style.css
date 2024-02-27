@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Rubik:ital@0;1&display=swap');
+
+
+:root {
+    --laranja: #ff7b00;
+    --verde: #ccff33;
+    --preto: #011627;
+    --vermelho: #6a040f;
+    --font-texto: "Anta", sans-serif;
+    --font-titulo:"Rubik", sans-serif;
+                            }
+
+body {
+    background-color: var(--verde);
+}
