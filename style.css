@@ -67,7 +67,7 @@ body {
 }
 
 .ativo{
-    background-color: var(--verde);
+    background-color: var(--vermelho);
     border-bottom: 4px var(--vermelho)
 }
 
