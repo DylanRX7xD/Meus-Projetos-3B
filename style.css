@@ -1,74 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Rubik:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --laranja: #ff7b00;
-    --verde: #ccff33;
+    --cor-de-fundo: #000000;
+    --amarelo: #d5ff61;
+    --branco: #ff4d00;
+    --botao-ativo: #000000;
     --preto: #000000;
-    --vermelho: #6a040f;
-    --font-texto: "Anta", sans-serif;
-    --font-titulo:"Rubik", sans-serif;
-                            }
-
-body {
-    background-color: var(--preto);
-    color: var(--laranja);
-    font-family: var(--font-texto);
-
-
+    --botao-inativo: #514b4b;
+    --texto-fundo: #9f9daf4d;
 }
 
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
 .conteudo-principal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .titulo-principal {
     text-align: left;
     width: 100%;
-    font-size: 36px;
+    font-size: 32px;
 }
 
-.titulo-principal span{
-    color: var(--vermelho);
+.titulo-principal span {
+    color: var(--amarelo);
 }
 
 .botao {
-    font-family: var(--font-texto);
-    background-color: var(--laranja);
-    color: var(--preto);
+    font-family: "Crakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
     display: flex;
     justify-content: center;
     padding: 1em;
+    font-size: 18px;
+    align-items: center;
     width: 100%;
-    border-bottom: 4px solid var(--laranja);
-    border-left: 4px solid var(--laranja);
-    border-right: 4px solid var(--laranja);
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
     border-top: none;
+}
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
 }
 
 .botoes {
     display: block;
 }
 
-
-.botao:first-child {
-    border-radius: 40px 40px 0 0;
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    color: var(--preto);
+    font-weight: 400;
+    border-bottom: 4px solid var(--preto);
 }
 
-.botao:last-child {
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
     border-radius: 0 0 40px 40px;
 }
+.aba-conteudo.ativo{
+    display:block;
+}
 
-.ativo{
-    background-color: var(--vermelho);
-    border-bottom: 4px var(--vermelho)
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
 }
 
 
@@ -77,15 +97,13 @@ body {
         display: flex;
     }
 
-    .botao:first-child{
+    .botao:first-child {
         border-radius: 40px 0 0 0;
     }
 
-    .botao:last-child{
+    .botao:last-child {
         border-radius: 0 40px 0 0;
     }
 
-}
-    
 
-    
+}
